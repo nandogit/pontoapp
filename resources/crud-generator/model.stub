@@ -1,0 +1,21 @@
+<?php
+
+namespace DummyNamespace;
+
+{{useSoftDeletes}}
+
+class DummyClass extends BaseModel
+{
+    {{softDeletes}}
+    
+    /**
+     * The database table used by the model.
+     *
+     * @var string
+     */
+    protected $table = '{{table}}';
+
+    {{primaryKey}}
+
+    {{relationships}}
+}
